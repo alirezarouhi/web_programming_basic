@@ -19,6 +19,18 @@
 				
 				}
 			?>
+			/* (inam code khoobie.harki neveshte dastesh dard nakone)
+			$dir = './images';
+			$allowed_type = array('jpg','jpeg','png','gif');
+
+			$d = dir($dir);
+			while( $f = $d->read() ){
+				$ftype = end(explode('.', $f));
+				if( !in_array( strtolower($ftype),$allowed_type) ) continue;
+				echo "<img src='$dir/$f' />";
+			
+			}
+			*/
         </div>
         <ul class="btn">
         	<?php
