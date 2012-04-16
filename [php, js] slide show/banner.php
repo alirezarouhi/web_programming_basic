@@ -11,15 +11,21 @@
 	<div class="banner">
     	<div class="scroll">
 			<?php
-				// dir
-				//while
-					// echo <div><img src='?' /></div>
+				$d=dir("./images");
+				while($s=$d->read()){	//ta zamani k meqdari dar file bashe bekhoon
+					if (substr($s,-4!=.jpg)) continue;
+					echo $d->read(),"<br />"	//ax ra chap mikonad 
+				
+				
+				}
 			?>
         </div>
         <ul class="btn">
         	<?php
-				// be tedad img ha li besazid !
-			?>
+			while($s!=Null){
+				echo "<li></li>"
+			}	
+		?>
         </ul>
         
     </div>
