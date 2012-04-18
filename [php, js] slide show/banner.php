@@ -12,9 +12,11 @@
     	<div class="scroll">
 			<?php
 				$d=dir("./images");
+				count=0;
 				while($s=$d->read()){	//ta zamani k meqdari dar file bashe bekhoon
 					if (substr($s,-4!=.jpg)) continue;
 					echo $d->read(),"<br />"	//ax ra chap mikonad 
+					count++;
 				
 				
 				}
@@ -34,9 +36,10 @@
         </div>
         <ul class="btn">
         	<?php
-			while($s!=Null){
+			for($i=0;$i<=count;count++){
 				echo "<li></li>"
-			}	
+				
+			}
 		?>
         </ul>
         
